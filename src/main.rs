@@ -4,6 +4,11 @@ use std::env;
 fn main() {
     let mut numbers: Vec<u64> = Vec::new();
 
+    let args: Vec<String> = env::args().collect();
+    let n = args.len();
+    println!("Number of args: {}", n);
+    println!("Args: {:?}", args);
+
     for arg in env::args().skip(1) {
         numbers.push(u64::from_str(&arg).expect("error parsing argument"));
     }
