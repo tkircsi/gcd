@@ -5,8 +5,10 @@ Calculates the greates common divisor of the given numbers.
 ```bash
 cargo run 10 24 45 67 78
 
- Finished dev [unoptimized + debuginfo] target(s) in 0.00s
+    Finished dev [unoptimized + debuginfo] target(s) in 0.03s
      Running `target/debug/gcd 10 24 45 67 78`
+Number of args: 6
+Args: ["target/debug/gcd", "10", "24", "45", "67", "78"]
 The greatest common divisor of [10, 24, 45, 67, 78] is 1
 ```
 
